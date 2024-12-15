@@ -136,25 +136,78 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 
-// page navigation variables
+// Modify the page navigation section of the script
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    // Get the page name using either data-en, data-ka, or the button text
+    const pageName = this.getAttribute('data-en') ||
+      this.getAttribute('data-ka') ||
+      this.textContent.toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+    for (let j = 0; j < pages.length; j++) {
+      if (pageName.toLowerCase() === pages[j].dataset.page.toLowerCase()) {
+        pages[j].classList.add("active");
+        navigationLinks[j].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        pages[j].classList.remove("active");
+        navigationLinks[j].classList.remove("active");
       }
     }
-
   });
+}// Auto-select language based on location
+window.addEventListener("load", function () {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { latitude, longitude } = position.coords;
+
+      // Approximate location check for Georgia
+      if (latitude > 41 && latitude < 43 && longitude > 41 && longitude < 47) {
+        selectLanguage('ka'); // Auto-select Georgian
+      } else {
+        selectLanguage('en'); // Default to English
+      }
+    });
+  } else {
+    selectLanguage('en'); // Default fallback
+  }
+});
+
+// Function to select and apply language
+function selectLanguage(lang) {
+  const btnKA = document.getElementById('langKA');
+  const btnEN = document.getElementById('langEN');
+
+  // Apply active class to the selected button
+  if (lang === 'ka') {
+    btnKA.classList.add('active');
+    btnEN.classList.remove('active');
+  } else {
+    btnEN.classList.add('active');
+    btnKA.classList.remove('active');
+  }
+
+  // Update all text content based on the selected language
+  document.querySelectorAll("[data-en], [data-ka]").forEach((el) => {
+    el.textContent = lang === 'ka' ? el.dataset.ka : el.dataset.en;
+  });
+
+  // Save the user's language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
 }
 
+// Add event listeners for manual language selection
+document.getElementById('langKA').addEventListener('click', () => selectLanguage('ka'));
+document.getElementById('langEN').addEventListener('click', () => selectLanguage('en'));
+
+// Load user's language preference on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('preferredLanguage');
+  if (savedLang) {
+    selectLanguage(savedLang);
+  }
+});
