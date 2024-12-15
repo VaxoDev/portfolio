@@ -48,11 +48,15 @@
         <div class="info-content">
           <h1 class="name" title="VakhoDev">VakhoDev</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title" data-en="Web Developer" data-ka="ვებ დეველოპერი">Web developer</p>
         </div>
-
+        <div class="language-toggle">
+          <button id="langKA" class="language-btn" title="Switch to Georgian">GE</button>
+          <button id="langEN" class="language-btn active" title="გადათარგმნეთ ინგლისურ ენაზე">EN</button>
+        </div>
+        
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span data-en="Show Contacts" data-ka="კონტაქტების ჩვენება">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -72,9 +76,10 @@
             </div>
 
             <div class="contact-info">
-              <a href="mailto:miakvaxo123@gmail.com" class="contact-title">EMAIL (click)</a>
+              <a href="mailto:miakvaxo123@gmail.com" class="contact-title" data-en="EMAIL (click)"
+                data-ka="ემაილი (დააჭირეთ)">EMAIL (click)</a>
 
-              <!-- <a href="mailto:miakvaxo123@gmail.com" class="contact-link">miakvaxo123@gmail.com</a> -->
+
             </div>
 
           </li>
@@ -86,9 +91,10 @@
             </div>
 
             <div class="contact-info">
-              <a href="tel:+995551034747" class="contact-title">PHONE (click)</a>
+              <a href="tel:+995551034747" class="contact-title" data-en="PHONE (click)"
+                data-ka="ტელეფონი (დააჭირეთ)">PHONE (click)</a>
 
-              <!-- <a href="tel:+995551034747" class="contact-link">+995 551 03 47 47</a> -->
+
             </div>
 
           </li>
@@ -139,15 +145,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-en="About" data-ka="შესახებ" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-en="Resume" data-ka="რეზიუმე" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-en="Portfolio" data-ka="პროექტები" data-nav-link>Portfolio</button>
           </li>
 
           <!-- <li class="navbar-item">
@@ -155,7 +161,7 @@
           </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-en="Contact" data-ka="დამიკავშირდით" data-nav-link>Contact</button>
           </li>
 
         </ul>
@@ -173,25 +179,32 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" data-en="About me" data-ka="ჩემს შესახებ">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p data-en="I'm Creative Web Developer From Zestafoni, Georgia. I enjoy turning complex problems into simple, beautiful and intuitive designs."
+            data-ka="მე ვარ კრეატიული ვებ დეველოპერი ზესტაფონიდან, საქართველო. მე მსიამოვნებს რთული პრობლემების მარტივ, ლამაზ და ინტუიციურ დიზაინად გადაქცევა.">
             I'm Creative Web Developer From Zestafoni, Georgia.
             I enjoy
             turning complex problems into simple, beautiful and intuitive designs.
           </p>
 
-          <p>
+          <p data-en=" My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+          Moreover, I
+          add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+          across your
+          message and identity in the most creative way. FOR DEVELOPERS: I know HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, React, Firebase, Supabase and APIs."
+            data-ka="ჩემი საქმეა თქვენი ვებსაიტის შექმნა ისე, რომ ის იყოს ფუნქციონალური და მოსახერხებელი, მაგრამ ამავე დროს მიმზიდველი.
+          უფრო მეტიც, მე
+          ვამატებ პერსონალურ შეხებას თქვენს პროდუქტზე და ვრწმუნდები, რომ ის არის თვალწარმტაცი და მარტივი გამოსაყენებელი. დეველოპერებისთვის: მე ვიცი: HTML, CSS, Bootsrap, Tailwind CSS, JavaScript, React, Firebase, Supabase და API-ები.">
             My job is to build your website so that it is functional and user-friendly but at the same time attractive.
             Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way
-<br><br>
+            add personal touch to your product and make sure that is eye-catching and easy to use.
+            <br><br>
             FOR DEVELOPERS: <br>
-            I know HTML,<br>CSS,<br>Bootstrap,<br>talwind css, <br>javascript, <br>react,<br> firebase,<br> supabase, <br> git <br> and APIs.
+            I know HTML,<br>CSS,<br>Bootstrap,<br>talwind css, <br>javascript, <br>react,<br> firebase,<br> supabase
+            <br> and APIs.
           </p>
         </section>
 
@@ -202,21 +215,25 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title" data-en="What I'm doing" data-ka="რას ვაკეთებ">რას ვაკეთებ</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Backend Web Development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend Web development</h4>
+                <h4 class="h4 service-item-title" data-en="Backend Web Development" data-ka="Backend ვებ დეველოპმენტი">
+                  Backend Web Development</h4>
 
-                <p class="service-item-text">
-                  Light backend for the frontend websites using Backend JavaScript.
+                <p class="service-item-text"
+                  data-en="Light backend for the frontend websites using Backend JavaScript. This includes Authentication, Databases and more"
+                  data-ka="მსუბუქი Backend-ი Frontend ვებსაიტებისთვის Backend JavaScript-ის გამოყენებით. ეს მოიცავს აუთენტიკაციას, მონაცემთა ბაზას და სხვას.">
+                  Light backend for the frontend websites using Backend JavaScript. This includes Authentication,
+                  Databases and more.
                 </p>
               </div>
 
@@ -225,24 +242,25 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Frontend Web Development Icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Frontend Web development</h4>
+                <h4 class="h4 service-item-title" data-en="Frontend Web Development"
+                  data-ka="Frontend ვებ დეველოპმენტი">Frontend Web Development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-en="High-quality development of sites at the professional level."
+                  data-ka="ვებსაიტების პროფესიონალურ დონეზე შექმნა.">
                   High-quality development of sites at the professional level.
                 </p>
               </div>
 
             </li>
 
-
-
           </ul>
 
         </section>
+
 
 
         <!--
@@ -445,7 +463,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" data-en="Resume" data-ka="რეზიუმე">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -455,18 +473,20 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" data-en="Education" data-ka="განათლება">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Self learning</h4>
+              <h4 class="h4 timeline-item-title" data-en="Self Learning" data-ka="თვით სწავლა">Self learning</h4>
 
-              <span>2024 april</span>
+              <span data-en="2024 april" data-ka="2024 წლის აპრილი">2024 april</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text"
+                data-en="Started Learning Python but gave up in week becasue didn't find it interesting."
+                data-ka="დავიწყე 'Python'-ის სწავლა მაგრამ თავი დავანებე რადგან საინტერესოდ არ მიმაჩნდა">
                 Started Learning Python but gave up in week because didnt find it interesting.
               </p>
 
@@ -474,11 +494,13 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Self learning</h4>
+              <h4 class="h4 timeline-item-title" data-en="Self Learning" data-ka="თვით სწავლა">Self learning</h4>
 
-              <span>2024 june-july</span>
+              <span data-en="2024 june-july" data-ka="2024 ივნისი-ივლისი">2024 june-july</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text"
+                data-en="Started to become interested in web development in may and thought about learning HTML, CSS and JS."
+                data-ka="ინტერესი გამეჩინა ვებ დეველოპმენტში და დავიწყე HTML და CSS-ის სწავლა">
                 Started to become interested in web development in may and thought about learning HTML, CSS and JS.
               </p>
 
@@ -486,11 +508,13 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Self learning</h4>
+              <h4 class="h4 timeline-item-title" data-en="Self Learning" data-ka="თვით სწავლა">Self learning</h4>
 
-              <span>2024 july-august</span>
+              <span data-en="2024 july-august" data-ka="2024 ივლისი-აგვისტო">2024 july-august</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text"
+                data-en="Learnt basics of html css and javascript and started to make projects to sharpen my skills."
+                data-ka="შევისწავლე HTML, CSS და JavaScript-ის საწყისები. და დავიწყე პროექტების გაკეთება.">
                 Learnt basics of html css and javascript and started to make projects to sharpen my skills.
               </p>
 
@@ -498,12 +522,14 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Self learning</h4>
+              <h4 class="h4 timeline-item-title" data-en="Self Learning" data-ka="თვით სწავლა">Self learning</h4>
 
-              <span>2024 august-september (present)</span>
+              <span data-en="2024 august-present" data-ka="2024 წელი აგვისტო-აწმყო">2024 august-september
+                (present)</span>
 
-              <p class="timeline-text">
-                Started doing advanced projects and learning advanced js.
+              <p class="timeline-text" data-en="Learnt much more and started making advanced and bigger projects."
+                data-ka="ვისწავლე ბევრად მეტი რამ და დავიწყე უფრო განვითარებული და დიდი პროექტების შექმნა.">
+                Learnt much more and started making advanced and bigger projects.
               </p>
 
             </li>
@@ -518,63 +544,82 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" data-en="Experience" data-ka="გამოცდილება">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">HTML, CSS and JavaScript developer</h4>
+              <h4 class="h4 timeline-item-title" data-en="Mid-Range Fullstack Developer"
+                data-ka="საშუალო დონის Fullstack დეველოპერი">Mid-Range Fullstack Developer</h4>
 
-              <span>2024 September</span>
+              <span data-en="2024 December (present)" data-ka="2024 წლის დეკემბერი (აწმყო)">2024 December
+                (present)</span>
 
-              <p class="timeline-text">
-                Expanded knowledge to include JavaScript basics. Learned to add interactivity to web pages, manipulate
-                the DOM, and handle events. Practiced creating simple scripts to enhance user experience on websites
-                built with HTML and CSS.
+              <p class="timeline-text"
+                data-en="Got my hands on React, Firebase, Supabase, APIs, Tailwind, Bootstrap and deepened my skills in web development."
+                data-ka="დავიწყე React-ის, Firebase-ის, Supabase-ის, API-ების, Tailwind-ის და Bootstrap-ის შესწავლა და გავაღრმავე ცოდან ვებ დეველოპმენტში.">
+                Got my hands on React, Firebase, Supabase, APIs, Tailwind, Bootstrap and deepened my skills in web
+                development.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Advanced HTML and CSS developer</h4>
+              <h4 class="h4 timeline-item-title" data-en="HTML, CSS and JavaScript developer"
+                data-ka="HTML, CSS და JavaScript დეველოპერი">HTML, CSS and JavaScript developer</h4>
 
-              <span>2024 August</span>
+              <span data-en="2024 September" data-ka="2024 წლის სექტემბერი">2024 September</span>
 
-              <p class="timeline-text">
-                Deepened understanding of CSS, including more complex selectors and layout techniques like flexbox and
-                CSS Grid. Improved skills in creating responsive designs using media queries. Focused on writing
-                cleaner, more efficient CSS code.
+              <p class="timeline-text"
+                data-en="Expanded JavaScript knowladge and learned about Backend functionalities."
+                data-ka="გავაღრმავე JavaScript-ის ცოდნა და შევისწავლე Backend ფუნქციონალები">
+                Expanded JavaScript knowladge and learned about Backend functionalities.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">HTML and CSS developer</h4>
+              <h4 class="h4 timeline-item-title" data-en="Advanced HTML and CSS developer"
+                data-ka="მოწინავე HTML და CSS დეველოპერი">Advanced HTML and CSS developer</h4>
 
-              <span>2024 July</span>
+              <span data-en="2024 August" data-ka="2024 წლის აგვისტო">2024 August</span>
 
-              <p class="timeline-text">
-                Built upon HTML knowledge and introduced CSS for styling. Learned to create layouts, style text and
-                elements, and began exploring responsive design principles. Started creating more visually appealing and
-                structured web pages.
+              <p class="timeline-text"
+                data-en="Deepened understanding in CSS and learnt many new things.Also learned Javascript basics."
+                data-ka="გავაღრმავე CSS-ის ცოდნა და ვისწავლე ბევრი ახალი რამ.ასევე შევისწავლე JavaScript-ის საწყისები.">
+                Deepened understanding in CSS and learnt many new things.Also learned Javascript basics.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">HTML developer</h4>
+              <h4 class="h4 timeline-item-title" data-en="HTML and CSS developer" data-ka="HTML და CSS დეველოპერი">HTML
+                and CSS developer</h4>
 
-              <span>2024 June</span>
+              <span data-en="2024 July" data-ka="2024 წლის ივლისი">2024 July</span>
 
-              <p class="timeline-text">
-                Began web development journey by learning HTML basics. Gained understanding of document structure,
-                common elements, and attributes. Created simple static web pages with text, images, and links. Focused
-                on writing semantic and well-structured HTML.
+              <p class="timeline-text" data-en="Added CSS to my experience and started making small projects."
+                data-ka="შევისწავლე CSS და დავიწყე პატარა პროექტების კეთება.">
+                Added CSS to my experience and started making small projects.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-en="HTML developer" data-ka="HTML დეველოპერი">HTML developer</h4>
+
+              <span data-en="20224 June" data-ka="2024 წლის ივნისი">2024 June</span>
+
+              <p class="timeline-text"
+                data-en="Began web development and started with HTML, learned it and got to basic CSS."
+                data-ka="დავიწყე ვებ დეველოპმენტი HTML-ს შესწავლით, შემდეგ გადავედი CSS-ზე.">
+                Began web development and started with HTML, learned it and got to basic CSS.
               </p>
 
             </li>
@@ -584,19 +629,20 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title" data-en="My Skills" data-ka="ჩემი შესაძლებლოები">My skills</h3>
 
           <ul class="skills-list content-card">
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Frontend Web Development </h5>
-                <data value="80">75%</data>
+                <h5 class="h5" data-en="Frontend Web Development" data-ka="Frontend ვებ დეველოპმენტი">Frontend Web
+                  Development </h5>
+                <data value="85">85%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
 
             </li>
@@ -604,12 +650,13 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Backend Web Development</h5>
-                <data value="20">20%</data>
+                <h5 class="h5" data-en="Backend Web Development" data-ka="Backend ვებ დეველოპმენტი">Backend Web
+                  Development</h5>
+                <data value="60">60%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
 
             </li>
@@ -633,23 +680,25 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title" data-en="Portfolio" data-ka="ჩემი პროექტები">Portfolio</h2>
         </header>
 
         <section class="projects">
 
           <ul class="filter-list">
             <li class="filter-item">
-              <button class="active" data-filter-btn="all">All</button>
+              <button class="active" data-filter-btn="all" data-en="All" data-ka="ყველა">All</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn="web development">Web Development</button>
+              <button data-filter-btn="web development" data-en="Web Development" data-ka="ვებ დეველოპმენტი">Web
+                Development</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn="simple games">Simple Games</button>
+              <button data-filter-btn="simple games" data-en="Simple Games" data-ka="მარტივი თამაშები">Simple
+                Games</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn="api tools">API tools</button>
+              <button data-filter-btn="api tools" data-en="API tools" data-ka="API ხელსაწყოები">API tools</button>
             </li>
           </ul>
 
@@ -657,7 +706,8 @@
 
           <div class="filter-select-box">
             <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value data-en="Select Category" data-ka="მიუთითეთ კატეგორია">Select
+                category</div>
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
@@ -665,16 +715,18 @@
 
             <ul class="select-list">
               <li class="select-item">
-                <button data-select-item="all">All</button>
+                <button class="active" data-filter-btn="all" data-en="All" data-ka="ყველა">All</button>
               </li>
               <li class="select-item">
-                <button data-select-item="web development">Web Development</button>
+                <button data-filter-btn="web development" data-en="Web Development" data-ka="ვებ დეველოპმენტი">Web
+                  Development</button>
               </li>
               <li class="select-item">
-                <button data-select-item="simple games">Simple Games</button>
+                <button data-filter-btn="simple games" data-en="Simple Games" data-ka="მარტივი თამაშები">Simple
+                  Games</button>
               </li>
               <li class="select-item">
-                <button data-select-item="api tools">API tools</button>
+                <button data-filter-btn="api tools" data-en="API tools" data-ka="API ხელსაწყოები">API tools</button>
               </li>
             </ul>
           </div>
@@ -695,7 +747,7 @@
 
                 <h3 class="project-title">Alowishus</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category" data-en="Web development" data-ka="ვებ დეველოპმენტი">Web development</p>
 
               </a>
             </li>
@@ -713,7 +765,7 @@
 
                 <h3 class="project-title">Anon ecommerce</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category" data-en="Web development" data-ka="ვებ დეველოპმენტი">Web development</p>
 
               </a>
             </li>
@@ -731,7 +783,7 @@
 
                 <h3 class="project-title">Meal recipes</h3>
 
-                <p class="project-category">API tools</p>
+                <p class="project-category" data-en="API tools" data-ka="API ხელსაწყოები">API tools</p>
 
               </a>
             </li>
@@ -749,7 +801,7 @@
 
                 <h3 class="project-title">Book store</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category" data-en="Web development" data-ka="ვებ დეველოპმენტი">Web development</p>
 
               </a>
             </li>
@@ -767,7 +819,7 @@
 
                 <h3 class="project-title">Text to Speech</h3>
 
-                <p class="project-category">API tools</p>
+                <p class="project-category" data-en="API tools" data-ka="API ხელსაწყოები">API tools</p>
 
               </a>
             </li>
@@ -785,7 +837,7 @@
 
                 <h3 class="project-title">Random Meal Recipes</h3>
 
-                <p class="project-category">API tools</p>
+                <p class="project-category" data-en="API tools" data-ka="API ხელსაწყოები">API tools</p>
 
               </a>
             </li>
@@ -803,7 +855,7 @@
 
                 <h3 class="project-title">Typing speed game</h3>
 
-                <p class="project-category">Simple Games</p>
+                <p class="project-category" data-en="Simple Games" data-ka="მარტივი თამაშები">Simple Games</p>
 
               </a>
             </li>
@@ -821,7 +873,7 @@
 
                 <h3 class="project-title">Memory game</h3>
 
-                <p class="project-category">Simple Games</p>
+                <p class="project-category" data-en="Simple Games" data-ka="მარტივი თამაშები">Simple Games</p>
 
               </a>
             </li>
@@ -839,7 +891,7 @@
 
                 <h3 class="project-title">Weather app</h3>
 
-                <p class="project-category">API tools</p>
+                <p class="project-category" data-en="API tools" data-ka="API ხელსაწყოები">API tools</p>
 
               </a>
             </li>
@@ -857,7 +909,7 @@
 
                 <h3 class="project-title">Math quiz</h3>
 
-                <p class="project-category">Simple Games</p>
+                <p class="project-category" data-en="Simple Games" data-ka="მარტივი თამაშები">Simple Games</p>
 
               </a>
             </li>
@@ -875,7 +927,7 @@
 
                 <h3 class="project-title">Image Search</h3>
 
-                <p class="project-category">API tools</p>
+                <p class="project-category" data-en="API tools" data-ka="API ხელსაწყოები">API tools</p>
 
               </a>
             </li>
@@ -1089,20 +1141,20 @@
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title" data-en="Contact Me" data-ka="დამიკავშირდით">Contact Me</h2>
         </header>
 
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23680.149680691877!2d43.01976784282459!3d42.107070100211615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405cb8b4ca29bfa5%3A0xb6f444e1f1624709!2z4YOW4YOU4YOh4YOi4YOQ4YOk4YOd4YOc4YOY!5e0!3m2!1ska!2sge!4v1734283026445!5m2!1ska!2sge"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Me Through Mail (average respond time: 4hr)</h3>
+          <h3 class="h3 form-title" data-en="Contact Me Through Mail (average respond time: 4 hours)" data-ka="დამიკავშირდით ემაილის საშუალებით (საშუალო პასუხის დრო: 4 საათი)">Contact Me Through Mail (average respond time: 4 hours)</h3>
 
           <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
             <input type="hidden" name="access_key" value="8e3d1a48-523e-4506-a7ca-fb01e99d9d1b">
@@ -1120,7 +1172,7 @@
 
             <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span data-en="Send Message" data-ka="გაგზავნეთ მესიჯი">Send Message</span>
             </button>
 
           </form>
@@ -1156,7 +1208,40 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const languageButtons = document.querySelectorAll('.language-btn');
+      let currentLanguage = localStorage.getItem('preferredLanguage') || 'ka';
 
+      function changeLanguage(lang) {
+        currentLanguage = lang;
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-en]').forEach(elem => {
+          elem.textContent = elem.getAttribute(`data-${lang}`);
+        });
+        localStorage.setItem('preferredLanguage', lang);
+        updateActiveButton();
+      }
+
+      function updateActiveButton() {
+        languageButtons.forEach(btn => {
+          btn.classList.remove('active');
+          if (btn.id.toLowerCase() === `lang${currentLanguage.toUpperCase()}`) {
+            btn.classList.add('active');
+          }
+        });
+      }
+
+      languageButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const lang = this.id.replace('lang', '').toLowerCase();
+          changeLanguage(lang);
+        });
+      });
+
+      // Initial language setup
+      changeLanguage(currentLanguage);
+    });</script>
 </body>
 
 </html>
